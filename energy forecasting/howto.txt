@@ -1,0 +1,25 @@
+INSTALL PYTHON3.8 ON LINUX
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+
+INSTALL AND ACTIVATE VENV
+
+sudo apt-get install python3.8-venv
+python3.8 -m venv forecastingVenv
+source forecastingVenv/bin/activate
+python3.8 -m pip install --upgrade pip
+
+BEFORE REQUIREMENTS.TXT
+
+pip install --upgrade wheel
+pip install --upgrade setuptools
+pip install gensim
+sudo apt-get install python3.8-dev
+
+INSTALL DEPENDENCIES
+
+pip install -r requirements.txt
+pip install --upgrade "protobuf<=3.20.1"
