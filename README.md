@@ -41,7 +41,7 @@ Open a Terminal and execute the following command to run the program
 python3 forecasting_main.py
 
 Several parameters can be changed from pipeline.config
-===================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------------------- 
 More specifically,
 
 1. high_correlated_features: true/false , to activate / disactivate the option of high correlated features (default: true) | type: boolean
@@ -70,7 +70,7 @@ More specifically,
 For the different machine learning models, one can adjust the following parameters
 
 All the available parameters for each model are in the configuration file
----------------------------------------------------------------------------------------------------------------------------------------------------- 
+
 1. test_size: number of days for which the energy consumption will be forecasted (default: 7) | type: int
 2. epochs: number of epochs for model to train | type: int
 3. batch_size: batch size for the model to train | type: int
