@@ -67,7 +67,8 @@ More specifically,
 
 
 For the different machine learning models, one can adjust the following parameters
-All the available parameters for each model are in the configuration file (change only what is possible for each model)
+
+All the available parameters for each model are in the configuration file
 ---------------------------------------------------------------------------------------------------------------------------------------------------- 
 1. "test_size": number of days for which the energy consumption will be forecasted (default: 7) | type: int
 2. "epochs": number of epochs for model to train | type: int
