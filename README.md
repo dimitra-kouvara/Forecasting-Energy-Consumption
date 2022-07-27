@@ -33,6 +33,7 @@ installed in the residence, as well as historical weather data through API by Wo
 
 
 INSTRUCTIONS ON HOW TO RUN THE PROJECT
+===================================================================================================================================================
 Create a virtual environment by following the instructions at howto.txt file. 
 Note that these instructions apply for Linux.
 
