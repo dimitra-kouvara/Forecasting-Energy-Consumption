@@ -176,8 +176,9 @@ class Forecaster():
 
         return df
 
-    # Function that is dimitra++
+    # Function that creates extra time-related features from weather data (sunset, sunrise, isdaylight)
     def feature_extraction_weather_data(self):
+        # Function that converts the format of the timestamp
         def convert_pmANDam(hour):
             try:
                 in_time = datetime.datetime.strptime(hour, "%I:%M %p")
@@ -217,11 +218,11 @@ class Forecaster():
 
     # Function that when initiated loads the dataframes of each json file , makes some descriptive statistics and extracts features from the data
     def feature_extraction_sensor_data(self):
-        # dimitra?
+        # Function that preserves only the English version of the bank holiday
         def engVersion_holidays(text):
             return text[text.find("[") + 1:text.find("]")]
 
-        # dimitra?
+        # Function that erases special characters 
         def no_special(text):
             return re.sub("[^a-zA-Z0-9]+", "", text)
 
@@ -697,7 +698,7 @@ class Forecaster():
         # merge the data from the sensors with the data from weather API
         df = pd.merge(sensor_data, weather_data, on='timestamp')
 
-        # dimitra edw ti kanoume
+        # convert sunrise and sunset features to string format
         df['sunrise'] = df['date'].astype(str) + ' ' + df['sunrise'].astype(str)
         df['sunset'] = df['date'].astype(str) + ' ' + df['sunset'].astype(str)
 
